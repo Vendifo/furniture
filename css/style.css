@@ -894,7 +894,6 @@ body {
     position: relative;
     max-width: 100%;
     /* Для адаптивности */
-    
 }
 
 .benefits__item__image img {
@@ -935,4 +934,84 @@ body {
     display: flex;
     gap: 18px;
     font-family: 'TildaSans';
+}
+
+/* =======================catalogfur========================================== */
+.catalogfur__container {
+    border-radius: 30px;
+    background: #0D0D0D;
+    box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.10);
+}
+
+.catalogfur__title {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 37.24px;
+}
+
+.catalogfur__grid {
+    display: flex;
+    margin-top: 21px;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+}
+
+.catalogfur__item {
+    color: #EAEAEA;
+    text-shadow: 0px 0px 14px rgba(0, 0, 0, 0.75), 0px 0px 14px rgba(0, 0, 0, 0.75), 0px 0px 14px rgba(0, 0, 0, 0.75);
+    font-family: Tilda Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 25px 25px 15px 15px;
+    border: 1px solid #eaeaeaa4;
+    background: #111111;
+}
+
+.catalogfur__item__image {
+    position: relative;
+}
+
+.catalogfur__item__image__number {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    font-weight: 100;
+}
+
+.catalogfur__item__image__text {
+    position: absolute;
+    bottom: 10px;
+    left: 9px;
+}
+
+.catalogfur__item__disc {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6.74px;
+    
+}
+
+.catalogfur__item__disc__text {
+    font-weight: 100;
+}
+
+.catalogfur__item__func__btn {
+    width: 100%;
+    height: 32px;
+    border-radius: 15px;
+    border: 1px solid #C2A97D;
+    background: linear-gradient(269deg, #C2A97D -21.83%, #C2A97D -21.82%, #A67C46 111.18%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: 'drukcur';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
