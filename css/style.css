@@ -82,7 +82,7 @@ body {
 }
 
 .wrapper {
-    width: 70%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 130px;
@@ -262,7 +262,7 @@ body {
     flex-wrap: wrap;
     gap: 11px;
     /* Расстояние между карточками */
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .abstracts__item {
@@ -350,15 +350,48 @@ body {
 
 .workshop__row {
     display: flex;
-    gap: 21px;
+    justify-content: space-around;
+    gap: 20px;
     align-items: center;
     padding-top: 38px;
     padding-bottom: 22px;
+    overflow: hidden;
+    position: relative;
 }
 
 .workshop__row div {
     border-radius: 25px;
-    opacity: 0.5;
+    flex: 1;
+    transition: transform 0.4s, filter 0.4s, transform-origin 0.4s;
+}
+
+.workshop__row img {
+    width: 100%;
+    height: auto;
+    filter: blur(4px);
+    transform: scale(0.9);
+    transform-origin: center;
+}
+
+.main-image img {
+    filter: none;
+    transform: scale(1);
+}
+
+.animate-fade {
+    animation: animateFade 0.8s ease-in-out;
+}
+
+@keyframes animateFade {
+    from {
+        opacity: 0;
+        transform: translateX(25%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .workshop ul {
@@ -406,4 +439,500 @@ body {
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+}
+
+/* ==============================maked================================================= */
+
+.maked__content {
+    display: flex;
+    justify-content: center;
+    margin-top: 34px;
+    gap: 14.89px;
+}
+
+.maked__item {
+    border-radius: 25px;
+    border: 1px solid #EAEAEA;
+    display: flex;
+}
+
+.maked__item__image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.maked__item__image__back {
+    border-radius: 25px 25px 25px 25px;
+    min-width: 205.431px;
+    min-height: 206.162px;
+}
+
+.maked__item__image__hum1 {
+
+    position: absolute;
+    top: 55px;
+    left: -5px;
+}
+
+.maked__item__image__hum2 {
+    border-radius: 0px 0px 0px 56px;
+    position: absolute;
+    top: 35px;
+    left: -5px;
+}
+
+.maked__item__image__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: #FFF;
+    width: 94.308px;
+    height: 24.856px;
+    border-radius: 30px;
+    color: #FFF;
+    font-family: 'TildaSans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    gap: 4px;
+    padding: 4px 8px;
+    /* Регулируйте отступы по вашему усмотрению */
+    background: rgba(194, 169, 125, 0.6);
+}
+
+.maked__item__disc {
+    display: flex;
+    flex-direction: column;
+    width: 176px;
+
+    padding: 13.89px 1px 0px 10px;
+}
+
+.maked__item__disc h2 {
+    color: #EAEAEA;
+
+    font-family: 'TildaSans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.maked__item__disc span {
+    color: #EAEAEA;
+    font-family: 'TildaSans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.maked__item__disc p {
+    color: #EAEAEA;
+
+    font-family: 'TildaSans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.maked__item__disc__name {
+    background: linear-gradient(269deg, #C2A97D -21.83%, #C2A97D -21.82%, #A67C46 111.18%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Tilda Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.maked__item__disc__name span {
+    background: linear-gradient(269deg, #C2A97D -21.83%, #C2A97D -21.82%, #A67C46 111.18%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'TildaSans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.maked__item__disc__line {
+    width: 171.802px;
+    height: 1px;
+    flex-shrink: 0;
+    background: linear-gradient(90deg, rgba(234, 234, 234, 0.00) 4.24%, rgba(234, 234, 234, 0.80) 48.98%, rgba(234, 234, 234, 0.00) 96.61%);
+    margin: 8px 0px 9px 0px;
+}
+
+.maked__item__disc__text {
+    color: #EAEAEA;
+
+    font-family: 'TildaSans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 99%;
+    padding-right: 27px;
+    /* 13.86px */
+}
+
+.maked__button button {
+    display: flex;
+    margin: 0 auto;
+    border-radius: 50px;
+    background: linear-gradient(269deg, #C2A97D -4.84%, #A67C46 115.93%);
+    color: var(--absolut-white);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25) inset, 0px 0px 75px 0px rgba(0, 0, 0, 0.45);
+    height: 35px;
+    width: 237px;
+    margin-top: 22px;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
+    text-align: center;
+    font-family: 'drukcur';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* ============================catalog======================================================= */
+.catalog__container {
+    border-radius: 30px;
+    background: #0D0D0D;
+
+    box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.10);
+}
+
+.catalog__title {
+    display: flex;
+    gap: 16px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 23px;
+}
+
+.catalog__title__line {
+    width: 2.209px;
+    height: 35.337px;
+    opacity: 0.5;
+    background: #EAEAEA;
+}
+
+.catalog__category {
+    display: flex;
+    gap: 11px;
+    margin-left: 17.67px;
+    margin-top: 21.69px;
+}
+
+.catalog__category__item {
+    text-align: center;
+    font-family: 'TildaSans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    background: linear-gradient(269deg, #C2A97D -21.83%, #A67C46 111.18%);
+    background-clip: text;
+    color: #C2A97D;
+    border-radius: 42.857px;
+    border: 0.5px solid #C2A97D;
+    width: 110.429px;
+    height: 36.81px;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25) inset, 0px 0px 75px 0px rgba(0, 0, 0, 0.45);
+    transition: all 0.3s ease-in-out;
+}
+
+.selected {
+    border-radius: 28px;
+    background: linear-gradient(269deg, #C2A97D -21.83%, #A67C46 111.18%);
+    flex-shrink: 0;
+    /* Используем border-box */
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+    color: #EAEAEA;
+    text-align: center;
+    font-family: Tilda Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.catalog__grid {
+    margin: 23.11px 17.67px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.catalog__grid__container {
+    margin-left: 17.77px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++item++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.catalog__grid__item {
+    color: #EAEAEA;
+    font-family: 'TildaSans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    border-radius: 25px 25px 10px 10px;
+    border: 1px solid #dfdfdf88;
+}
+
+.catalog__grid__item__kich {
+    font-size: 18px;
+}
+
+.catalog__grid__item__kich span {
+    font-weight: 100;
+}
+
+.catalog__grid__item__type span {
+    font-weight: 100;
+}
+
+.catalog__grid__item__price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    padding-bottom: 10px;
+}
+
+.catalog__grid__item__price__text {
+    font-weight: 100;
+}
+
+.catalog__grid__item__price__text__num {
+    background: linear-gradient(269deg, #C2A97D -21.83%, #C2A97D -21.82%, #A67C46 111.18%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'TildaSans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.catalog__grid__item__price__button {
+    color: #EAEAEA;
+    text-align: center;
+    font-family: 'TildaSans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background: linear-gradient(269deg, #C2A97D -21.83%, #C2A97D -21.82%, #A67C46 111.18%);
+    width: 122.314px;
+    height: 28.286px;
+    margin-top: 8px;
+    margin-right: 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.catalog__grid__item__price__button:hover {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.catalog__func {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 22px;
+}
+
+.catalog__func__btn {
+    color: #EAEAEA;
+    text-wrap: nowrap;
+    text-align: center;
+    font-family: 'drukcur';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    width: 237px;
+    height: 35px;
+    padding: 15px 95px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: linear-gradient(269deg, #C2A97D -4.84%, #A67C46 115.93%);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25) inset, 0px 0px 75px 0px rgba(0, 0, 0, 0.45);
+    transition: all 0.3s ease-in-out;
+}
+
+.catalog__func__btn:hover {
+    font-size: 16px;
+}
+
+/* ================================extra============================================= */
+.extra__container {
+    background-image: url(/images/extra__back.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.extra__list {
+    color: #EAEAEA;
+    font-family: 'TildaSans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 21px;
+}
+
+.extra__list__row1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    padding: 22.82px;
+    border-radius: 25px;
+    background: #0D0D0D;
+    box-shadow: 0px 0px 55px 0px rgba(255, 255, 255, 0.10);
+    width: 331px;
+
+}
+
+.extra__list__row1 button {
+    transition: all 0.3s ease-in-out;
+}
+
+.extra__list__row1 button:hover {
+    font-size: 20px;
+    box-shadow: 0px 0px 55px 0px rgba(255, 255, 255, 0.05);
+}
+
+.extra__list__row2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10.39px;
+    border-radius: 25px;
+    border: 2px solid #eaeaeab2;
+    padding: 22.82px;
+    transition: all 0.3s ease-in-out;
+}
+
+.active {
+    color: #C2A97D;
+}
+
+/* ===================================ecokitch======================================= */
+.ecokitch__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ecokitch__func {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ecokitch__func__btn {
+    width: 237px;
+    height: 35px;
+    color: #EAEAEA;
+    border-radius: 50px;
+    background: linear-gradient(269deg, #C2A97D -4.84%, #A67C46 115.93%);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25) inset, 0px 0px 75px 0px rgba(0, 0, 0, 0.45);
+    text-align: center;
+    font-family: 'drukcur';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 36.68px;
+
+}
+
+/* =============================== benefits===================================================*/
+.benefits__list {
+    margin-top: 35.47px;
+    display: flex;
+    flex-direction: column;
+    gap: 22.11px;
+}
+
+.benefits__item {
+    display: flex;
+    gap: 20px;
+    border-radius: 26px 25px 10px 26px;
+    border: 1px solid #eaeaeab6;
+}
+
+.benefits__item__image {
+    position: relative;
+    max-width: 100%;
+    /* Для адаптивности */
+    
+}
+
+.benefits__item__image img {
+    border-radius: 25px;
+    max-width: 305px;
+    position: relative;
+}
+
+.benefits__item__image p {
+    font-family: 'TildaSans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 105.5%;
+    color: #C2A97D;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 95%;
+    text-align: left;
+}
+
+.benefits__item__list {
+    margin: 17.64px 0px 17.64px 0px;
+    color: #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 14px;
+    font-family: 'TildaSans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+}
+
+.benefits__item__list__row {
+    display: flex;
+    gap: 18px;
+    font-family: 'TildaSans';
 }
