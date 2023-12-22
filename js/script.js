@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+
     const workshopRow = document.querySelector(".workshop__row");
 
     workshopRow.children[1].classList.add("main-image");
@@ -21,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         thirdImage.classList.add("main-image", "animate-fade");
     }
 
-    setInterval(rotateImages, 15000);
+    setInterval(rotateImages, 10000);
 
     const sharesRow = document.querySelector(".shares__row");
 
@@ -43,16 +44,21 @@ document.addEventListener("DOMContentLoaded", function () {
         firstImage.classList.add("main-image-share", "animate-fade");
     }
 
-    setInterval(rotateImagesShare, 15000);
+    setInterval(rotateImagesShare, 10000);
+
+
 
     var recomItems = document.querySelectorAll('.recom__item');
 
     function checkVisibility() {
-        recomItems.forEach(function (item) {
-            if (isElementInViewport(item)) {
-                item.classList.add('show');
-            }
-        });
+        // Проверяем ширину экрана
+        if (window.innerWidth > 1100) {
+            recomItems.forEach(function (item) {
+                if (isElementInViewport(item)) {
+                    item.classList.add('show');
+                }
+            });
+        }
     }
 
     function isElementInViewport(el) {
@@ -83,3 +89,4 @@ function selectCategory(button) {
     // Добавляем класс selected к нажатой кнопке
     button.classList.add('selected');
 }
+

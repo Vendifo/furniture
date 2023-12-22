@@ -17,32 +17,41 @@
                 <img src="/images/_105553154231680.svg" alt="">
             </div>
             <ul class="header__list">
-                <li><a href="#" class="header__item header__active">Главная</a></li>
-                <li><a href="#" class="header__item">О компании</a></li>
-                <li><a href="#" class="header__item">О цехе</a></li>
-                <li><a href="#" class="header__item">Наши работы</a></li>
-                <li><a href="#" class="header__item">Каталог кухней</a></li>
-                <li><a href="#" class="header__item">Оборудование для кухни</a></li>
-                <li><a href="#" class="header__item">Кухни эконом</a></li>
-                <li><a href="#" class="header__item">Преимущества</a> </li>
-                <li><a href="#" class="header__item">Другая корпусная мебели</a></li>
-                <li><a href="#" class="header__item">Акции</a></li>
-                <li><a href="#" class="header__item">Почему нас рекомендуют</a></li>
-                <li><a href="#" class="header__item">Отзывы</a></li>
-                <li><a href="#" class="header__item">Видео отзывы</a></li>
-                <li><a href="#" class="header__item">Адрес</a></li>
+                <li><a href="#title" class="header__item header__active" data-section="title">Главная</a></li>
+                <li><a href="#abstracts" class="header__item" data-section="abstracts">О компании</a></li>
+                <li><a href="#workshop" class="header__item" data-section="workshop">О цехе</a></li>
+                <li><a href="#maked" class="header__item" data-section="maked">Наши работы</a></li>
+                <li><a href="#catalog" class="header__item" data-section="catalog">Каталог кухней</a></li>
+                <li><a href="#extra" class="header__item" data-section="extra">Оборудование для кухни</a></li>
+                <li><a href="#ecokitch" class="header__item" data-section="ecokitch">Кухни эконом</a></li>
+                <li><a href="#benefits" class="header__item" data-section="benefits">Преимущества</a> </li>
+                <li><a href="#catalogfur" class="header__item" data-section="catalogfur">Другая корпусная мебели</a></li>
+                <li><a href="#shares" class="header__item" data-section="shares">Акции</a></li>
+                <li><a href="#recom" class="header__item" data-section="recom">Почему нас рекомендуют</a></li>
+                <li><a href="#reviews" class="header__item" data-section="reviews">Отзывы</a></li>
+                <li><a href="#video" class="header__item" data-section="video">Видео отзывы</a></li>
+                <li><a href="#address" class="header__item" data-section="address">Адрес</a></li>
             </ul>
             <div class="header__func">
                 <p>+7 707 123-45-67</p>
                 <div>
+                    <img class="header__func__img" src="/images/header__title.svg" alt="">
+                </div>
+                <div>
                     <button class="header__func__btn">Заказать замер</button>
                 </div>
+                <div>
+                    <button class="header__func__show">
+                        <img src="/images/header__func.svg" alt="">
+                    </button>
+                </div>
+                
             </div>
         </div>
     </header>
     <main class="main">
         <div class="wrapper">
-            <section class="title">
+            <section id="title" class="title">
                 <div class="title__container">
                     <div class="title__circle title__circle--top"></div>
                     <div class="title__circle title__circle--right"></div>
@@ -87,7 +96,7 @@
                     </div>
                 </div>
             </section>
-            <section class="abstracts">
+            <section id="abstracts" class="abstracts">
                 <div class="abstracts__container">
                     <h1 class="all__title">ПОЧЕМУ КЛИЕНТЫ ЗАКАЗЫВАЮТ
                         В “ЛЯ-КУХНИ”?</h1>
@@ -160,7 +169,7 @@
 
                 </div>
             </section>
-            <section class="workshop">
+            <section id="workshop" class="workshop">
                 <div class="workshop__container">
                     <h1 class="all__title">НАШ ЦЕХ</h1>
                     <div class="workshop__row">
@@ -185,13 +194,14 @@
                     </ul>
                 </div>
             </section>
-            <section class="maked">
+            <section id="maked" class="maked">
                 <div class="maked__cantainer">
                     <h1 class="all__title">Выполненные работы</h1>
                     <div class="maked__content">
                         <div class="maked__item">
                             <div class="maked__item__image">
                                 <img class="maked__item__image__back" src="/images/maked__1.svg" alt="">
+                                <img class="maked__item__image__back__phone" src="/images/maked__1__phone.svg" alt="">
                                 <img class="maked__item__image__hum1" src="/images/maked__1__hum.svg" alt="">
                                 <div class="maked__item__image__price">
                                     <img class="maked__item__image__price__img" src="/images/maked__image__price.svg"
@@ -200,9 +210,11 @@
                                 </div>
                             </div>
                             <div class="maked__item__disc">
-                                <h2>Бронзовый<span> спарк</span></h2>
-                                <p>СКАНДИНАВСКИЙ: 3,6 x 3,5 м</p>
-                                <p class="maked__item__disc__name">ЗАКАЗЧИК: <span> Марина</span></p>
+                                <div >
+                                    <h2>Бронзовый<span> спарк</span></h2>
+                                    <p>СКАНДИНАВСКИЙ: 3,6 x 3,5 м</p>
+                                    <p class="maked__item__disc__name">ЗАКАЗЧИК: <span> Марина</span></p>
+                                </div>
                                 <div class="maked__item__disc__line"></div>
                                 <div class="maked__item__disc__text">В сочетании с открытыми полками из материала
                                     стлолешницы мы получили легкую кухню,
@@ -212,6 +224,7 @@
                         <div class="maked__item">
                             <div class="maked__item__image">
                                 <img class="maked__item__image__back" src="/images/maked__1.svg" alt="">
+                                <img class="maked__item__image__back__phone" src="/images/maked__1__phone.svg" alt="">
                                 <img class="maked__item__image__hum2" src="/images/maked__2.svg" alt="">
                                 <div class="maked__item__image__price">
                                     <img class="maked__item__image__price__img" src="/images/maked__image__price.svg"
@@ -220,9 +233,11 @@
                                 </div>
                             </div>
                             <div class="maked__item__disc">
-                                <h2>Бронзовый<span> спарк</span></h2>
-                                <p>СКАНДИНАВСКИЙ: 3,6 x 3,5 м</p>
-                                <p class="maked__item__disc__name">ЗАКАЗЧИК: <span> Марина</span></p>
+                                <div>
+                                    <h2>Бронзовый<span> спарк</span></h2>
+                                    <p>СКАНДИНАВСКИЙ: 3,6 x 3,5 м</p>
+                                    <p class="maked__item__disc__name">ЗАКАЗЧИК: <span> Марина</span></p>
+                                </div>
                                 <div class="maked__item__disc__line"></div>
                                 <div class="maked__item__disc__text">В сочетании с открытыми полками из материала
                                     стлолешницы мы получили легкую кухню,
@@ -236,7 +251,7 @@
                     </div>
                 </div>
             </section>
-            <section class="catalog">
+            <section id="catalog" class="catalog">
                 <div class="catalog__container">
                     <div class="catalog__title">
                         <h1 class="all__title">Кухни</h1>
@@ -340,13 +355,13 @@
                     </div>
                 </div>
             </section>
-            <section class="extra">
+            <section id="extra" class="extra">
                 <div class="extra__container">
                     <h1 class="all__title">Дополнительно к кухне</h1>
                     <div class="extra__list">
                         <div class="extra__list__row1">
                             <button class="active">Встраиваемая техника</button>
-                            <button>Отдельностоящаятехника</button>
+                            <button>Отдельностоящая техника</button>
                             <button>Системы хранения</button>
                             <button>Сантехника</button>
                             <button>Свет</button>
@@ -366,11 +381,11 @@
                     </div>
                 </div>
             </section>
-            <section class="ecokitch">
+            <section id="ecokitch" class="ecokitch">
                 <div class="ecokitch__container">
                     <h1 class="all__title">Кухни эконом класса</h1>
                     <div class="ecokitch__list">
-                        <div class="catalog__grid__item">
+                        <div class="ecokitch__grid__item">
                             <img class="catalog__grid__item__img" src="/images/catalog__item.svg" alt="">
                             <div class="catalog__grid__container">
                                 <p class="catalog__grid__item__kich">Кухня <span>Antro</span></p>
@@ -384,7 +399,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="catalog__grid__item">
+                        <div class="ecokitch__grid__item">
                             <img class="catalog__grid__item__img" src="/images/catalog__item.svg" alt="">
                             <div class="catalog__grid__container">
                                 <p class="catalog__grid__item__kich">Кухня <span>Antro</span></p>
@@ -398,7 +413,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="catalog__grid__item">
+                        <div class="ecokitch__grid__item">
                             <img class="catalog__grid__item__img" src="/images/catalog__item.svg" alt="">
                             <div class="catalog__grid__container">
                                 <p class="catalog__grid__item__kich">Кухня <span>Antro</span></p>
@@ -418,13 +433,14 @@
                     </div>
                 </div>
             </section>
-            <section class="benefits">
+            <section id="benefits" class="benefits">
                 <div class="benefits__container">
                     <h1 class="all__title">Преимущества</h1>
                     <div class="benefits__list">
                         <div class="benefits__item">
                             <div class="benefits__item__image">
                                 <img class="blurred__image" src="/images/benef__back1.svg" alt="">
+                                <img class="benefits__item__image__phone" src="/images/benefits__phonr.svg" alt="">
                                 <p>Оптимизируем рабочие процессы
                                     чтобы создать кухню мечты:</p>
                             </div>
@@ -459,6 +475,7 @@
                         <div class="benefits__item">
                             <div class="benefits__item__image">
                                 <img class="blurred__image" src="/images/benef__back2.svg" alt="">
+                                <img class="benefits__item__image__phone" src="/images/benefits__phonr.svg" alt="">
                                 <p>Используем эффективно пространство кухни</p>
                             </div>
                             <div class="benefits__item__list">
@@ -488,6 +505,7 @@
                         <div class="benefits__item">
                             <div class="benefits__item__image">
                                 <img class="blurred__image" src="/images/benef__back3.svg" alt="">
+                                <img class="benefits__item__image__phone" src="/images/benefits__phonr.svg" alt="">
                                 <p>Оптимизируем рабочие процессы
                                     чтобы создать кухню мечты:</p>
                             </div>
@@ -526,7 +544,7 @@
                     </div>
                 </div>
             </section>
-            <section class="catalogfur">
+            <section id="catalogfur" class="catalogfur">
                 <div class="catalogfur__container">
                     <div class="catalogfur__title">
                         <h1 class="all__title">КОРПУСНАЯ МЕБЕЛЬ</h1>
@@ -649,7 +667,7 @@
                     </div>
                 </div>
             </section>
-            <section class="shares">
+            <section id="shares" class="shares">
                 <div class="shares__container">
                     <h1 class="all__title">Акции</h1>
                     <div class="shares__row">
@@ -678,7 +696,7 @@
                     <img class="shares__back" src="/images/shares__back.svg" alt="">
                 </div>
             </section>
-            <section class="recom">
+            <section id="recom" class="recom">
                 <div class="recom__container">
                     <h1 class="all__title">ПОЧЕМУ <span class="recom__title">НАС РЕКОМЕНДУЮТ</span></h1>
                     <div class="recom__head">
@@ -730,7 +748,7 @@
                     </div>
                 </div>
             </section>
-            <section class="reviews">
+            <section id="reviews" class="reviews">
                 <div class="reviews__container">
                     <h1 class="all__title"> Отзывы</h1>
                     <div class="reviews__variant">
@@ -751,7 +769,7 @@
                     </div>
                 </div>
             </section>
-            <section class="video">
+            <section id="video" class="video">
                 <div class="video__container">
                     <h1 class="all__title">Видео отзывы</h1>
                     <div class="video__row">
@@ -798,7 +816,7 @@
                     </div>
                 </div>
             </section>
-            <section class="address">
+            <section id="address" class="address">
                 <div class="address__container">
                     <h1 class="all__title">АДРЕСА</h1>
                     <div class="address__list">
@@ -822,14 +840,14 @@
                     </div>
                 </div>
             </section>
-            <section class="request">
+            <section id="request" class="request">
                 <div class="request__container">
                     <h1 class="request__title">ОСТАВЬ ЗАЯВКУ</h1>
                     <div class="request__content">
                         <div class="request__image">
-                            <img src="/images/req__girl.svg" alt="">
+                            <img class="request__image__girl" src="/images/req__girl.svg" alt="">
                             <div class="request__image__form">
-                                <img src="/images/req__paper.svg" alt="">
+                                <img class="request__image__form__paper" src="/images/req__paper.svg" alt="">
                                 <p>Мы перезвоним Вам в течении
                                     2 часов</p>
                             </div>
@@ -853,55 +871,61 @@
                     <div class="footer__high">
                         <p class="footer__high__text">© 2023 "ЛЯ-КУХНИ" Все права защищены 
                             законодательством РК. ТОО "...". БИН 123456789012</p>
-                        <div class="footer__high__images">
-                            <img src="/images/footer__high.svg" alt="">
-                        </div>
-                        <div class="footer__high__numbers">
-                            <p class="footer__high__number">+7 (707) 336-66-65</p>
-                            <p>info@lakuhni.kz</p>
+                        <div class="footer__high__link">
+                            <div class="footer__high__images">
+                                <img src="/images/footer__high.svg" alt="">
+                            </div>
+                            <div class="footer__high__numbers">
+                                <p class="footer__high__number">+7 (707) 336-66-65</p>
+                                <p>info@lakuhni.kz</p>
+                            </div>
                         </div>
                     </div>
                     <div class="footer__down">
-                        <div class="footer__down__row">
-                            <h1>КУХНИ "ЛЯ-КУХНЯ"</h1>
-                            <a href="#">Современные кухни</a>
-                            <a href="#">Классические кухни</a>
-                            <a href="#">Кухни неоклассика</a>
-                            <a href="#">Шкафы Мария</a>
-                            <a href="#">Мебель для ванных</a>
+                        <div class="footer__downs">
+                            <div class="footer__down__row">
+                                <h1>КУХНИ "ЛЯ-КУХНЯ"</h1>
+                                <a href="#">Современные кухни</a>
+                                <a href="#">Классические кухни</a>
+                                <a href="#">Кухни неоклассика</a>
+                                <a href="#">Шкафы Мария</a>
+                                <a href="#">Мебель для ванных</a>
+                            </div>
+                            <div class="footer__down__row">
+                                <h1>КАТАЛОГ  МАТЕРИАЛОВ</h1>
+                                <a href="#">Цвета кухонь</a>
+                                <a href="#">Экологичность </a>
+                                <a href="#">Эргономика</a>
+                                <a href="#">Сертификаты</a>
+                            </div>
+                            <div class="footer__down__row">
+                                <h1>ПОРТФОЛИО</h1>
+                                <a href="#">Выполненные проекты</a>
+                                <a href="#">Полезные статьи </a>
+                                <a href="#">Отзывы </a>
+                                <a href="#">Дизайн кухни</a>
+                            </div>
                         </div>
-                        <div class="footer__down__row">
-                            <h1>КАТАЛОГ  МАТЕРИАЛОВ</h1>
-                            <a href="#">Цвета кухонь</a>
-                            <a href="#">Экологичность </a>
-                            <a href="#">Эргономика</a>
-                            <a href="#">Сертификаты</a>
-                        </div>
-                        <div class="footer__down__row">
-                            <h1>ПОРТФОЛИО</h1>
-                            <a href="#">Выполненные проекты</a>
-                            <a href="#">Полезные статьи </a>
-                            <a href="#">Отзывы </a>
-                            <a href="#">Дизайн кухни</a>
-                        </div>
-                        <div class="footer__down__row">
-                            <h1>ТОВАРЫ +</h1>
-                            <a href="#">Диваны </a>
-                            <a href="#">Техника </a>
-                            <a href="#">Сантехника </a>
-                            <a href="#">Аксессуары</a>
-                        </div>
-                        <div class="footer__down__row">
-                            <h1>ПОКУПАТЕЛЮ</h1>
-                            <a href="#">Оплата онлайн</a>
-                            <a href="#">Цена </a>
-                        </div>
-                        <div class="footer__down__row">
-                            <h1>НАШИ УСЛУГИ</h1>
-                            <a href="#">Бесплатный проект</a>
-                            <a href="#">Бесплатный замер </a>
-                            <a href="#">Доставка и сборка</a>
-                            <a href="#">Гарантия</a>
+                        <div class="footer__downs">
+                            <div class="footer__down__row">
+                                <h1>ТОВАРЫ +</h1>
+                                <a href="#">Диваны </a>
+                                <a href="#">Техника </a>
+                                <a href="#">Сантехника </a>
+                                <a href="#">Аксессуары</a>
+                            </div>
+                            <div class="footer__down__row">
+                                <h1>ПОКУПАТЕЛЮ</h1>
+                                <a href="#">Оплата онлайн</a>
+                                <a href="#">Цена </a>
+                            </div>
+                            <div class="footer__down__row">
+                                <h1>НАШИ УСЛУГИ</h1>
+                                <a href="#">Бесплатный проект</a>
+                                <a href="#">Бесплатный замер </a>
+                                <a href="#">Доставка и сборка</a>
+                                <a href="#">Гарантия</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -910,6 +934,7 @@
     </main>
     
     <script src="/js/script.js"></script>
+    <script src="/js/header.js"></script>
 </body>
 
 </html>
