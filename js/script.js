@@ -49,11 +49,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     var recomItems = document.querySelectorAll('.recom__item');
+    var factoryItems = document.querySelectorAll('.about-factory__card--left');
+    var factoryItemsRight = document.querySelectorAll('.about-factory__card--right');
 
     function checkVisibility() {
         // Проверяем ширину экрана
         if (window.innerWidth > 1100) {
             recomItems.forEach(function (item) {
+                if (isElementInViewport(item)) {
+                    item.classList.add('show');
+                }
+            });
+        }
+    }
+
+    function checkVisibilityCard() { 
+        if (window.innerWidth > 1100) {
+            factoryItems.forEach(function (item) {
+                if (isElementInViewport(item)) {
+                    item.classList.add('show');
+                }
+            });
+        }
+    }
+
+    function checkVisibilityCardRight() { 
+        if (window.innerWidth > 1100) {
+            factoryItemsRight.forEach(function (item) {
                 if (isElementInViewport(item)) {
                     item.classList.add('show');
                 }
@@ -75,6 +97,11 @@ document.addEventListener("DOMContentLoaded", function () {
     checkVisibility();
     window.addEventListener('scroll', checkVisibility);
 
+    checkVisibilityCard();
+    window.addEventListener('scroll', checkVisibilityCard);
+
+    checkVisibilityCardRight();
+    window.addEventListener('scroll', checkVisibilityCardRight);
 });
 
 
@@ -89,4 +116,5 @@ function selectCategory(button) {
     // Добавляем класс selected к нажатой кнопке
     button.classList.add('selected');
 }
+
 

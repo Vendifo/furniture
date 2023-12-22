@@ -2815,13 +2815,14 @@
 
 /* ================================reviews================================================ */
 @media screen and (min-width:1100px) {
+
     .reviews__container {
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 70%;
-        margin: 0 auto;
+        margin: 0 auto 40px auto;
         align-items: center;
     }
 
@@ -2897,7 +2898,7 @@
         flex-direction: column;
         justify-content: center;
         width: 70%;
-        margin: 0 auto;
+        margin: 0 auto 40px auto;
         align-items: center;
     }
 
@@ -3644,5 +3645,444 @@
         font-style: normal;
         font-weight: 300;
         line-height: 150%;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .about-section {
+        padding-top: 25px;
+        padding-bottom: 30px;
+        color: #fff;
+        font-size: 20px;
+        font-family: 'TildaSans';
+    }
+
+    .team-list {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px 10px;
+    }
+
+    .employee-card {
+
+        display: flex;
+        background: #0d0d0d;
+        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+        border-radius: 25px;
+        overflow: hidden;
+    }
+
+    .employee-card--selected {
+        background: linear-gradient(#0d0d0d, #0d0d0d) padding-box;
+        border-radius: 25px;
+    }
+
+    .employee__photo {
+        margin-left: -1px;
+        width: 160px;
+        height: 160px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    .employee__info {
+        padding: 15px 13px 20px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .employee__name {
+        margin-bottom: 5px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 100%;
+    }
+
+    .employee__job {
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+    }
+
+    .employee__numbers {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 100%;
+    }
+
+    .employee__numbers span:first-child {
+        position: relative;
+    }
+
+    .employee__numbers span:first-child::after {
+        content: "";
+        position: absolute;
+        right: -13px;
+        top: 3px;
+        width: 1px;
+        height: 11px;
+        background-color: #333333;
+    }
+
+    .employees-disclaimer {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 100%;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:1099px) {
+    .about-section {
+        padding-top: 25px;
+        padding-bottom: 30px;
+        color: #fff;
+        font-size: 18px;
+        font-family: 'TildaSans';
+    }
+
+    .team-list {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px 10px;
+        justify-items: center;
+    }
+
+    .employee-card {
+        width: 160px;
+        background: #0d0d0d;
+        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+        border-radius: 25px;
+        overflow: hidden;
+    }
+
+    .employee-card--selected {
+        background: linear-gradient(#0d0d0d, #0d0d0d) padding-box;
+        border-radius: 25px;
+    }
+
+    .employee__photo {
+        margin-left: -1px;
+        width: 160px;
+        height: 160px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    .employee__info {
+        padding: 15px 13px 20px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .employee__name {
+        margin-bottom: 5px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+    }
+
+    .employee__job {
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+    }
+
+    .employee__numbers {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 100%;
+    }
+
+    .employee__numbers span:first-child {
+        position: relative;
+    }
+
+    .employee__numbers span:first-child::after {
+        content: "";
+        position: absolute;
+        right: -13px;
+        top: 3px;
+        width: 1px;
+        height: 11px;
+        background-color: #333333;
+    }
+
+    .employees-disclaimer {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 100%;
+    }
+}
+
+/*  */
+
+@media screen and (min-width:1100px) {
+    .about-factory-section {
+        color: #fff;
+        font-size: 22px;
+        font-family: 'TildaSans';
+
+    }
+
+    .about-factory__cards {
+        display: flex;
+        flex-direction: column;
+        background-color: #0d0d0d;
+        margin-top: 40px;
+    }
+
+    .about-factory__cards>*+* {
+        margin-top: 20px;
+    }
+
+    .about-factory__card {
+        position: relative;
+        width: 319px;
+        border: 0.5px solid #eaeaea;
+        border-radius: 10px;
+    }
+
+    .about-factory__card--left {
+        margin-left: 11px;
+    }
+
+    .about-factory__card--left::before {
+        content: "";
+        position: absolute;
+        left: -10px;
+        top: 10px;
+        width: 1px;
+        height: 259px;
+        background: var(--awful-color);
+    }
+
+    .about-factory__card--left::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 318px;
+        bottom: 0;
+        width: 491px;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%);
+        z-index: 2;
+    }
+
+    .about-factory__card--right {
+        margin-right: 11px;
+        margin-left: auto;
+    }
+
+    .about-factory__card--right::before {
+        content: "";
+        position: absolute;
+        right: -10px;
+        top: 10px;
+        width: 1px;
+        height: 259px;
+        background: var(--awful-color);
+    }
+
+    .about-factory__card--right::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -491px;
+        bottom: 0;
+        width: 491px;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%);
+        z-index: 2;
+    }
+
+    .about-factory__heading {
+        margin-top: 15px;
+        margin-left: 17px;
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 14px;
+    }
+
+    .about-factory__text {
+        margin-left: 17px;
+        margin-right: 20px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 14px;
+    }
+
+    .about-factory__img {
+        margin: 10px;
+        width: 299px;
+        height: 150px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    /* Описание цеха */
+    .about-factory__description {
+        font-family: 'TildaSans';
+        color: #fff;
+    }
+
+    .about-factory__description-box {
+        border-radius: 25px;
+        background-color: #171717;
+        box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25) inset, 0px 0px 75px 0px rgba(0, 0, 0, 0.45);
+        padding: 20px;
+    }
+
+    .about-factory__description-text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        margin-top: 20px;
+    }
+
+    .about-factory__description-text:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .about-factory__card--left {
+        opacity: 0;
+        transform: translateX(50%);
+        transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+    }
+
+    .about-factory__card--left.show {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .about-factory__card--right {
+        opacity: 0;
+        transform: translateX(-50%);
+        transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+    }
+
+    .about-factory__card--right.show {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:1099px) {
+    .about-factory-section {
+        color: #fff;
+        font-size: 22px;
+        font-family: 'TildaSans';
+    }
+
+    .about-factory__cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #0d0d0d;
+        margin-top: 40px;
+    }
+
+    .about-factory__cards>*+* {
+        margin-top: 20px;
+    }
+
+    .about-factory__card {
+        position: relative;
+        width: 319px;
+        border: 0.5px solid #eaeaea;
+        border-radius: 10px;
+    }
+
+    .about-factory__card--left {
+        margin-left: 11px;
+    }
+
+    .about-factory__card--left::before {
+        content: "";
+        position: absolute;
+        left: -10px;
+        top: 10px;
+        width: 1px;
+        height: 259px;
+        background: var(--awful-color);
+    }
+
+    .about-factory__card--right {
+        margin-right: 11px;
+    }
+
+    .about-factory__card--right::before {
+        content: "";
+        position: absolute;
+        right: -10px;
+        top: 10px;
+        width: 1px;
+        height: 259px;
+        background: var(--awful-color);
+    }
+
+    .about-factory__heading {
+        margin-top: 15px;
+        margin-left: 17px;
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 14px;
+    }
+
+    .about-factory__text {
+        margin-left: 17px;
+        margin-right: 20px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 14px;
+    }
+
+    .about-factory__img {
+        margin: 10px;
+        width: 299px;
+        height: 150px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    /* Описание цеха */
+    .about-factory__description {
+        font-family: 'TildaSans';
+        color: #fff;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .about-factory__description-box {
+        border-radius: 25px;
+        background-color: #171717;
+        box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25) inset, 0px 0px 75px 0px rgba(0, 0, 0, 0.45);
+        padding: 20px;
+    }
+
+    .about-factory__description-text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        margin-top: 20px;
+    }
+
+    .about-factory__description-text:not(:last-child) {
+        margin-bottom: 20px;
     }
 }
