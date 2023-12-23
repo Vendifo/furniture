@@ -413,7 +413,7 @@
 
     .title__circle--top {
         top: 258px;
-        left: 320px;
+        left: 258px;
     }
 
     .title__circle--right {
@@ -2265,7 +2265,6 @@
     .shares__row {
         display: flex;
         justify-content: space-around;
-        gap: 20px;
         align-items: center;
         padding-top: 38px;
         padding-bottom: 22px;
@@ -2641,22 +2640,6 @@
         background-color: var(--awful-color);
     }
 
-    .recom__item1::after {
-        content: "1";
-        position: absolute;
-        width: 1px;
-        height: 100%;
-        top: 20px;
-        right: -11px;
-        color: #fff;
-        font-family: Tilda Sans;
-        font-size: 150px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 100%;
-        /* 150px */
-        opacity: 0.02;
-    }
 
     .recom__item2 {
         position: relative;
@@ -2680,22 +2663,7 @@
         background-color: var(--awful-color);
     }
 
-    .recom__item2::after {
-        content: "2";
-        position: absolute;
-        width: 1px;
-        height: 100%;
-        top: -231px;
-        left: -89px;
-        color: #fff;
-        font-family: Tilda Sans;
-        font-size: 150px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 100%;
-        /* 150px */
-        opacity: 0.02;
-    }
+
 
 
     .recom__item3 {
@@ -2719,22 +2687,7 @@
         background-color: var(--awful-color);
     }
 
-    .recom__item3::after {
-        content: "3";
-        position: absolute;
-        width: 1px;
-        height: 100%;
-        top: 275px;
-        right: -1px;
-        color: #fff;
-        font-family: Tilda Sans;
-        font-size: 150px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 100%;
-        /* 150px */
-        opacity: 0.02;
-    }
+
 
 
     .recom__item4 {
@@ -2758,22 +2711,6 @@
         background-color: var(--awful-color);
     }
 
-    .recom__item4::after {
-        content: "4";
-        position: absolute;
-        width: 1px;
-        height: 100%;
-        top: 5px;
-        left: -100px;
-        color: #fff;
-        font-family: Tilda Sans;
-        font-size: 150px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 100%;
-        /* 150px */
-        opacity: 0.02;
-    }
 
     .recom__item {
         opacity: 1;
@@ -3331,7 +3268,8 @@
         border-radius: 25px;
         background: #171717;
         box-shadow: 1px 0px 4px 0px rgba(0, 0, 0, 0.25);
-        margin: 0px 50px;
+        max-width: 339px;
+        margin: 0 auto;
         padding-top: 25px;
         position: relative;
     }
@@ -3419,8 +3357,8 @@
 
     .request__image__form__paper {
         position: absolute;
-        top: -331px;
-        left: -41px;
+        top: -329px;
+        left: -73px;
     }
 
     .request__info {
@@ -3468,7 +3406,7 @@
     }
 
     .request__info__inputs input {
-        width: 327px;
+        width: 280px;
         height: 45px;
         border-radius: 10px;
         background: #2B2B2B;
@@ -3476,7 +3414,7 @@
     }
 
     .request__info__inputs__btn {
-        width: 327px;
+        width: 280px;
         height: 45px;
         border-radius: 46px;
         margin-top: 25.1px;
