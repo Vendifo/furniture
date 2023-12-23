@@ -4,6 +4,8 @@
     --awful-color: #c2a97d;
 }
 
+
+
 @media screen and (min-width:1100px) {
     body {
         background-color: var(--background);
@@ -208,7 +210,7 @@
     }
 }
 
-@media screen and (max-width:1099px) and (min-width:200px) {
+@media screen and (min-width:200px) and (max-width:1099px) {
     .main {
         padding: 0 0 0 0px;
         display: flex;
@@ -1507,6 +1509,7 @@
 
     .catalog__category {
         display: flex;
+        flex-wrap: wrap;
         gap: 11px;
         margin-left: 17.67px;
         margin-top: 21.69px;
