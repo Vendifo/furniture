@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         thirdImage.classList.add("main-image", "animate-fade");
     }
 
-    setInterval(rotateImages, 10000);
+    setInterval(rotateImages, 2000);
 
     const sharesRow = document.querySelector(".shares__row");
 
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         firstImage.classList.add("main-image-share", "animate-fade");
     }
 
-    setInterval(rotateImagesShare, 10000);
+    setInterval(rotateImagesShare, 4000);
 
 
 
