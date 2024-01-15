@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'drukcur';
     /* Название шрифта для использования в CSS */
-    src: url('/fonts/DrukCur/druktextwidecyr-medium.otf') format('truetype');
+    src: url('../fonts/DrukCur/druktextwidecyr-medium.otf') format('truetype');
     /* Путь к файлу шрифта */
     font-weight: normal;
     /* Нормальный вес шрифта */
@@ -11,7 +11,7 @@
 
 @font-face { 
     font-family: 'TildaSans';
-    src: url('/fonts/Tilda/TildaSans-Medium.woff') format('truetype');
+    src: url('../fonts/Tilda/TildaSans-Medium.woff') format('truetype');
     font-weight: normal;
     /* Нормальный вес шрифта */
     font-style: normal;
