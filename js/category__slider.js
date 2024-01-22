@@ -11,10 +11,10 @@ $(document).ready(function() {
         centerPadding: '30px',
     });
 
-    $('.clist__item__group__img').slick ({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        dots: false,
-    });
+    // $('.clist__item__group__img').slick ({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     arrows: true,
+    //     dots: false,
+    // });
 });
