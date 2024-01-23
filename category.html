@@ -21,22 +21,19 @@
             <div class="header__title">
                 <img src="./images/_105553154231680.svg" alt="">
             </div>
+            <div class="header__select">
+                <select class="header__select__func" name="select" id="">
+                    <option class="header__select__func__var" value="value1" selected>Усть-каменогорск</option>
+                    <option class="header__select__func__var" value="value2">Усть-каменогорск</option>
+                    <option class="header__select__func__var" value="value3">Усть-каменогорск</option>
+                </select>
+            </div>
             <ul class="header__list">
-                <li><a href="#title" class="header__item header__active" data-section="title">Главная</a></li>
-                <li><a href="#abstracts" class="header__item" data-section="abstracts">О компании</a></li>
-                <li><a href="#workshop" class="header__item" data-section="workshop">О цехе</a></li>
-                <li><a href="#maked" class="header__item" data-section="maked">Наши работы</a></li>
-                <li><a href="#catalog" class="header__item" data-section="catalog">Каталог кухней</a></li>
-                <li><a href="#extra" class="header__item" data-section="extra">Оборудование для кухни</a></li>
-                <li><a href="#ecokitch" class="header__item" data-section="ecokitch">Кухни эконом</a></li>
-                <li><a href="#benefits" class="header__item" data-section="benefits">Преимущества</a> </li>
-                <li><a href="#catalogfur" class="header__item" data-section="catalogfur">Другая корпусная мебели</a>
-                </li>
-                <li><a href="#shares" class="header__item" data-section="shares">Акции</a></li>
-                <li><a href="#recom" class="header__item" data-section="recom">Почему нас рекомендуют</a></li>
-                <li><a href="#reviews" class="header__item" data-section="reviews">Отзывы</a></li>
-                <li><a href="#video" class="header__item" data-section="video">Видео отзывы</a></li>
-                <li><a href="#address" class="header__item" data-section="address">Адрес</a></li>
+                <li><a href="#title" class="header__item header__active" data-section="title">Шкафы на заказ в Алматы</a></li>
+                <li><a href="#abstracts" class="header__item" data-section="abstracts">Все виды шкафов</a></li>
+                <li><a href="#workshop" class="header__item" data-section="workshop">Отзывы</a></li>
+                <li><a href="#maked" class="header__item" data-section="maked">Адреса</a></li>
+                
             </ul>
             <div class="header__func">
                 <p>+7 707 123-45-67</p>
@@ -44,7 +41,7 @@
                     <img class="header__func__img" src="./images/header__title.svg" alt="">
                 </div>
                 <div>
-                    <button class="header__func__btn">Заказать замер</button>
+                    <button class="header__func__btn">Вызвать замерщика</button>
                 </div>
                 <div>
                     <button class="header__func__show">
@@ -63,20 +60,26 @@
                         Шкафы на заказ в Алматы
                     </h1>
                 </div>
-                <div class="chead__slider">
-                    <img class="chead__slider__image" src="./images/category/chead.svg" alt="">
-                    <img class="chead__slider__image" src="./images/category/chead.svg" alt="">
-                    <img class="chead__slider__image" src="./images/category/chead.svg" alt="">
-                </div>
-                <div class="container">
-                    <div class="chead__text">
-                        Уже 17 лет мы производим качественную мебель по индивидуальным проектам. Выберите идею из
-                        выполненных проектов или предложите свою. Шкаф-купе на заказ в Алматы по индивидуальным размерам
-                        и пожеланиям. Быстро, качественно и в срок!
+
+                <div class="slider__container">
+                    <div class="chead__slider">
+                        <img class="chead__slider__image" src="./images/category/chead.svg" alt="">
+                        <img class="chead__slider__image" src="./images/category/chead.svg" alt="">
+                        <img class="chead__slider__image" src="./images/category/chead.svg" alt="">
                     </div>
-                    <button class="chead__button">
-                        ВЫЗВАТЬ ЗАМЕРЩИКА БЕСПЛАТНО
-                    </button>
+                </div>
+
+                <div class="container">
+                    <div class="chead__func">
+                        <div class="chead__text">
+                            Уже 17 лет мы производим качественную мебель по индивидуальным проектам. Выберите идею из
+                            выполненных проектов или предложите свою. Шкаф-купе на заказ в Алматы по индивидуальным размерам
+                            и пожеланиям. Быстро, качественно и в срок!
+                        </div>
+                        <button class="chead__button">
+                            ВЫЗВАТЬ ЗАМЕРЩИКА БЕСПЛАТНО
+                        </button>
+                    </div>
                 </div>
 
             </section>
@@ -121,137 +124,139 @@
             </section>
             <section class="category__list">
                 <div class="container">
-                    <select class="clist__filter" name="" id="">
-                        <option value="">1 вариант</option>
-                        <option value="">2 вариант</option>
-                        <option value="">3 вариант</option>
-                        <option value="">4 вариант</option>
-                    </select>
-                    <div class="clist__items">
-                        <div class="clist__item">
-                            <div class="clist__item__group__img">
-                                <img src="https://via.placeholder.com/155x179" alt="">
-                                <img src="https://via.placeholder.com/155x179" alt="">
-                                <img src="https://via.placeholder.com/155x179" alt="">
+                    <div class="clist__cont">
+                        <select class="clist__filter" name="" id="">
+                            <option value="">1 вариант</option>
+                            <option value="">2 вариант</option>
+                            <option value="">3 вариант</option>
+                            <option value="">4 вариант</option>
+                        </select>
+                        <div class="clist__items">
+                            <div class="clist__item">
+                                <div class="clist__item__group__img">
+                                    <img src="https://via.placeholder.com/155x179" alt="">
+                                    <img src="https://via.placeholder.com/155x179" alt="">
+                                    <img src="https://via.placeholder.com/155x179" alt="">
+                                </div>
+                                <div class="clist__item__img__disc">
+                                    <h1>Распашной шкаф, RH125</h1>
+                                    <p>от 2 000 тг/п.м</p>
+                                </div>
+                                <div class="clist__item__disc">
+                                    <p>Материал: <span>ЛДСП, МДФ, Массив, Шпон.</span></p>
+                                    <p>Фурнитура: <span>Германия Behrin</span></p>
+                                    <p>Срок: <span>до 10 дней</span></p>
+                                </div>
+                                <div class="clist__item__func">
+                                    <button class="clist__item__func__1">ЗАКАЗАТЬ</button>
+                                    <button class="clist__item__func__2">ПОДРОБНЕЕ</button>
+                                </div>
                             </div>
-                            <div class="clist__item__img__disc">
-                                <h1>Распашной шкаф, RH125</h1>
-                                <p>от 2 000 тг/п.м</p>
+                            <div class="clist__item">
+                                <div class="clist__item__group__img">
+                                    <img src="https://via.placeholder.com/155x179" alt="">
+                                    <img src="https://via.placeholder.com/155x179" alt="">
+                                    <img src="https://via.placeholder.com/155x179" alt="">
+                                </div>
+                                <div class="clist__item__img__disc">
+                                    <h1>Распашной шкаф, RH125</h1>
+                                    <p>от 2 000 тг/п.м</p>
+                                </div>
+                                <div class="clist__item__disc">
+                                    <p>Материал: <span>ЛДСП, МДФ, Массив, Шпон.</span></p>
+                                    <p>Фурнитура: <span>Германия Behrin</span></p>
+                                    <p>Срок: <span>до 10 дней</span></p>
+                                </div>
+                                <div class="clist__item__func">
+                                    <button class="clist__item__func__1">ЗАКАЗАТЬ</button>
+                                    <button class="clist__item__func__2">ПОДРОБНЕЕ</button>
+                                </div>
                             </div>
-                            <div class="clist__item__disc">
-                                <p>Материал: <span>ЛДСП, МДФ, Массив, Шпон.</span></p>
-                                <p>Фурнитура: <span>Германия Behrin</span></p>
-                                <p>Срок: <span>до 10 дней</span></p>
+                            <div class="clist__item">
+                                <div class="clist__item__group__img">
+                                    <img src="https://via.placeholder.com/155x179" alt="">
+                                    <img src="https://via.placeholder.com/155x179" alt="">
+                                    <img src="https://via.placeholder.com/155x179" alt="">
+                                </div>
+                                <div class="clist__item__img__disc">
+                                    <h1>Распашной шкаф, RH125</h1>
+                                    <p>от 2 000 тг/п.м</p>
+                                </div>
+                                <div class="clist__item__disc">
+                                    <p>Материал: <span>ЛДСП, МДФ, Массив, Шпон.</span></p>
+                                    <p>Фурнитура: <span>Германия Behrin</span></p>
+                                    <p>Срок: <span>до 10 дней</span></p>
+                                </div>
+                                <div class="clist__item__func">
+                                    <button class="clist__item__func__1">ЗАКАЗАТЬ</button>
+                                    <button class="clist__item__func__2">ПОДРОБНЕЕ</button>
+                                </div>
                             </div>
-                            <div class="clist__item__func">
-                                <button class="clist__item__func__1">ЗАКАЗАТЬ</button>
-                                <button class="clist__item__func__2">ПОДРОБНЕЕ</button>
+                            <div class="clist__item">
+                                <div class="clist__item__group__img">
+                                    <img src="https://via.placeholder.com/155x179" alt="">
+                                    <img src="https://via.placeholder.com/155x179" alt="">
+                                    <img src="https://via.placeholder.com/155x179" alt="">
+                                </div>
+                                <div class="clist__item__img__disc">
+                                    <h1>Распашной шкаф, RH125</h1>
+                                    <p>от 2 000 тг/п.м</p>
+                                </div>
+                                <div class="clist__item__disc">
+                                    <p>Материал: <span>ЛДСП, МДФ, Массив, Шпон.</span></p>
+                                    <p>Фурнитура: <span>Германия Behrin</span></p>
+                                    <p>Срок: <span>до 10 дней</span></p>
+                                </div>
+                                <div class="clist__item__func">
+                                    <button class="clist__item__func__1">ЗАКАЗАТЬ</button>
+                                    <button class="clist__item__func__2">ПОДРОБНЕЕ</button>
+                                </div>
+                            </div>
+                            <div class="clist__item">
+                                <div class="clist__item__group__img">
+                                    <img src="https://via.placeholder.com/155x179" alt="">
+                                    <img src="https://via.placeholder.com/155x179" alt="">
+                                    <img src="https://via.placeholder.com/155x179" alt="">
+                                </div>
+                                <div class="clist__item__img__disc">
+                                    <h1>Распашной шкаф, RH125</h1>
+                                    <p>от 2 000 тг/п.м</p>
+                                </div>
+                                <div class="clist__item__disc">
+                                    <p>Материал: <span>ЛДСП, МДФ, Массив, Шпон.</span></p>
+                                    <p>Фурнитура: <span>Германия Behrin</span></p>
+                                    <p>Срок: <span>до 10 дней</span></p>
+                                </div>
+                                <div class="clist__item__func">
+                                    <button class="clist__item__func__1">ЗАКАЗАТЬ</button>
+                                    <button class="clist__item__func__2">ПОДРОБНЕЕ</button>
+                                </div>
+                            </div>
+                            <div class="clist__item">
+                                <div class="clist__item__group__img">
+                                    <img src="https://via.placeholder.com/155x179" alt="">
+                                    <img src="https://via.placeholder.com/155x179" alt="">
+                                    <img src="https://via.placeholder.com/155x179" alt="">
+                                </div>
+                                <div class="clist__item__img__disc">
+                                    <h1>Распашной шкаф, RH125</h1>
+                                    <p>от 2 000 тг/п.м</p>
+                                </div>
+                                <div class="clist__item__disc">
+                                    <p>Материал: <span>ЛДСП, МДФ, Массив, Шпон.</span></p>
+                                    <p>Фурнитура: <span>Германия Behrin</span></p>
+                                    <p>Срок: <span>до 10 дней</span></p>
+                                </div>
+                                <div class="clist__item__func">
+                                    <button class="clist__item__func__1">ЗАКАЗАТЬ</button>
+                                    <button class="clist__item__func__2">ПОДРОБНЕЕ</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="clist__item">
-                            <div class="clist__item__group__img">
-                                <img src="https://via.placeholder.com/155x179" alt="">
-                                <img src="https://via.placeholder.com/155x179" alt="">
-                                <img src="https://via.placeholder.com/155x179" alt="">
-                            </div>
-                            <div class="clist__item__img__disc">
-                                <h1>Распашной шкаф, RH125</h1>
-                                <p>от 2 000 тг/п.м</p>
-                            </div>
-                            <div class="clist__item__disc">
-                                <p>Материал: <span>ЛДСП, МДФ, Массив, Шпон.</span></p>
-                                <p>Фурнитура: <span>Германия Behrin</span></p>
-                                <p>Срок: <span>до 10 дней</span></p>
-                            </div>
-                            <div class="clist__item__func">
-                                <button class="clist__item__func__1">ЗАКАЗАТЬ</button>
-                                <button class="clist__item__func__2">ПОДРОБНЕЕ</button>
-                            </div>
-                        </div>
-                        <div class="clist__item">
-                            <div class="clist__item__group__img">
-                                <img src="https://via.placeholder.com/155x179" alt="">
-                                <img src="https://via.placeholder.com/155x179" alt="">
-                                <img src="https://via.placeholder.com/155x179" alt="">
-                            </div>
-                            <div class="clist__item__img__disc">
-                                <h1>Распашной шкаф, RH125</h1>
-                                <p>от 2 000 тг/п.м</p>
-                            </div>
-                            <div class="clist__item__disc">
-                                <p>Материал: <span>ЛДСП, МДФ, Массив, Шпон.</span></p>
-                                <p>Фурнитура: <span>Германия Behrin</span></p>
-                                <p>Срок: <span>до 10 дней</span></p>
-                            </div>
-                            <div class="clist__item__func">
-                                <button class="clist__item__func__1">ЗАКАЗАТЬ</button>
-                                <button class="clist__item__func__2">ПОДРОБНЕЕ</button>
-                            </div>
-                        </div>
-                        <div class="clist__item">
-                            <div class="clist__item__group__img">
-                                <img src="https://via.placeholder.com/155x179" alt="">
-                                <img src="https://via.placeholder.com/155x179" alt="">
-                                <img src="https://via.placeholder.com/155x179" alt="">
-                            </div>
-                            <div class="clist__item__img__disc">
-                                <h1>Распашной шкаф, RH125</h1>
-                                <p>от 2 000 тг/п.м</p>
-                            </div>
-                            <div class="clist__item__disc">
-                                <p>Материал: <span>ЛДСП, МДФ, Массив, Шпон.</span></p>
-                                <p>Фурнитура: <span>Германия Behrin</span></p>
-                                <p>Срок: <span>до 10 дней</span></p>
-                            </div>
-                            <div class="clist__item__func">
-                                <button class="clist__item__func__1">ЗАКАЗАТЬ</button>
-                                <button class="clist__item__func__2">ПОДРОБНЕЕ</button>
-                            </div>
-                        </div>
-                        <div class="clist__item">
-                            <div class="clist__item__group__img">
-                                <img src="https://via.placeholder.com/155x179" alt="">
-                                <img src="https://via.placeholder.com/155x179" alt="">
-                                <img src="https://via.placeholder.com/155x179" alt="">
-                            </div>
-                            <div class="clist__item__img__disc">
-                                <h1>Распашной шкаф, RH125</h1>
-                                <p>от 2 000 тг/п.м</p>
-                            </div>
-                            <div class="clist__item__disc">
-                                <p>Материал: <span>ЛДСП, МДФ, Массив, Шпон.</span></p>
-                                <p>Фурнитура: <span>Германия Behrin</span></p>
-                                <p>Срок: <span>до 10 дней</span></p>
-                            </div>
-                            <div class="clist__item__func">
-                                <button class="clist__item__func__1">ЗАКАЗАТЬ</button>
-                                <button class="clist__item__func__2">ПОДРОБНЕЕ</button>
-                            </div>
-                        </div>
-                        <div class="clist__item">
-                            <div class="clist__item__group__img">
-                                <img src="https://via.placeholder.com/155x179" alt="">
-                                <img src="https://via.placeholder.com/155x179" alt="">
-                                <img src="https://via.placeholder.com/155x179" alt="">
-                            </div>
-                            <div class="clist__item__img__disc">
-                                <h1>Распашной шкаф, RH125</h1>
-                                <p>от 2 000 тг/п.м</p>
-                            </div>
-                            <div class="clist__item__disc">
-                                <p>Материал: <span>ЛДСП, МДФ, Массив, Шпон.</span></p>
-                                <p>Фурнитура: <span>Германия Behrin</span></p>
-                                <p>Срок: <span>до 10 дней</span></p>
-                            </div>
-                            <div class="clist__item__func">
-                                <button class="clist__item__func__1">ЗАКАЗАТЬ</button>
-                                <button class="clist__item__func__2">ПОДРОБНЕЕ</button>
-                            </div>
-                        </div>
+                        <button class="clist__button">
+                            СМОТРЕТЬ ЕЩЁ
+                        </button>
                     </div>
-                    <button class="clist__button">
-                        СМОТРЕТЬ ЕЩЁ
-                    </button>
                 </div>
             </section>
             <section class="category__reviews">
@@ -266,25 +271,29 @@
                     </div>
                     <div class="creviews__list">
                         <div class="creviews__item">
-                            <div class="creviews__item__title">
-                                <div>
-                                    <p>Наталья</p>
-                                    <p>27.03.2023</p>
+                            <div class="creviews__head">
+                                <div class="creviews__item__title">
+                                    <div>
+                                        <p>Наталья</p>
+                                        <p>27.03.2023</p>
+                                    </div>
+                                    <img src="./images/category/stars.svg" alt="">
                                 </div>
-                                <img src="./images/category/stars.svg" alt="">
+                                <img class="creviews__item__img" src="https://via.placeholder.com/220x120" alt="">
                             </div>
-                            <img class="creviews__item__img" src="https://via.placeholder.com/220x120" alt="">
                             <p>Супер кухня мне понравилось все круто дорого практично и супер цена.</p>
                         </div>
                         <div class="creviews__item">
-                            <div class="creviews__item__title">
-                                <div>
-                                    <p>Наталья</p>
-                                    <p>27.03.2023</p>
+                            <div class="creviews__head">
+                                <div class="creviews__item__title">
+                                    <div>
+                                        <p>Наталья</p>
+                                        <p>27.03.2023</p>
+                                    </div>
+                                    <img src="./images/category/stars.svg" alt="">
                                 </div>
-                                <img src="./images/category/stars.svg" alt="">
+                                <img class="creviews__item__img" src="https://via.placeholder.com/220x120" alt="">
                             </div>
-                            <img class="creviews__item__img" src="https://via.placeholder.com/220x120" alt="">
                             <p>Супер кухня мне понравилось все круто дорого практично и супер цена.</p>
                         </div>
                         <div class="creviews__item">
@@ -300,7 +309,7 @@
                         </div>
 
                     </div>
-                    <button class="creviews__button">СМОТРЕТЬ ВСЕ ОТЗЫВЫ</button>
+                    <div class="creviews__buttons"><button class="creviews__button">СМОТРЕТЬ ВСЕ ОТЗЫВЫ</button></div>
 
                 </div>
             </section>
@@ -351,7 +360,7 @@
                         </div>
                     </div>
                 </div>
-            </section> 
+            </section>
             <footer class="footer">
                 <div class="footer__container container">
                     <div class="footer__line"></div>
@@ -416,10 +425,10 @@
                         </div>
                     </div>
                 </div>
-            </footer> 
+            </footer>
         </div>
     </main>
-    
+
     <script src="./js/libs/jquery-3.6.3.min.js"></script>
     <script src="./js/libs/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>

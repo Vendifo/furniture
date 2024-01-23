@@ -1,5 +1,5 @@
-$(document).ready(function() {
-    $('.chead__slider').slick ({
+$(document).ready(function () {
+    $('.chead__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
@@ -8,13 +8,28 @@ $(document).ready(function() {
         arrows: false,
         dots: false,
         centerMode: true,
-        centerPadding: '30px',
+        responsive: [
+            {
+                breakpoint: 1099,
+                settings: {
+                    centerPadding: '30px'
+                }
+            },
+            {
+                breakpoint: 9999, // значение должно быть больше максимальной ширины, чтобы параметры применялись всегда
+                settings: {
+                    centerPadding: '300px'
+                }
+            }
+        ]
     });
 
-    // $('.clist__item__group__img').slick ({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     arrows: true,
-    //     dots: false,
-    // });
+
+
+    $('.clist__item__group__img').slick ({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+    });
 });
